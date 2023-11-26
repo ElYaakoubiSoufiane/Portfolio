@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-
+import { Link as ScrollLink } from "react-scroll";
 import { Item } from "./Variants";
 
 export default function Home() {
@@ -71,22 +71,19 @@ export default function Home() {
               front-end and back-end technologies,...
             </motion.p>
             <Link
-              to="skills"
+              to="about"
               className="pt-6 element-center md:justify-start md:items-left "
             >
-              <motion.button
-                variants={Item("up", -0.5)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                onClick={() => navigate("about")}
+              <ScrollLink
+                
+                to="about"
                 className="text-white  font-bold  px-6 border-[1px] border-white py-3 my-2 flex element-shadow w-auto rounded-[17px] bg-black   "
               >
                 Know More About Me
                 <span className="hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="  ml-1" />
                 </span>
-              </motion.button>
+              </ScrollLink>
             </Link>
           </div>
         </div>
