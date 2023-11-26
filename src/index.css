@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body {
+ background-color: rgb(0, 0, 0);
+ /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+} 
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer base {
+html{
+  font-family: 'Raleway', sans-serif;}}
+  
+.error_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+.NavBarLink{
+  @apply [background:#E6DADA] [background:-webkit-linear-gradient(to_left,#274046,#E6DADA)] [background:linear-gradient(to_left,#274046,#E6DADA)];
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.element-center{
+  @apply flex justify-center items-center;
+  }
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+.Course-Syl{ @apply flex  lg:w-[390px]     mx-auto  m-[10px] p-[2px]  rounded-[10px]  }
+.course-style{ @apply lg:w-[700px] w-[250px]  flex  object-cover   rounded-full m-[10px]    }
+.element-shadow{
+  box-shadow: 0 5px 5px  rgba(229, 229, 229, 0.25), 0 10px 10px rgba(231, 231, 231, 0.22);
+  
+}
+.element-shaDow{
+  box-shadow: 0 5px 5px  rgba(229, 229, 229, 0.25), 0 10px 10px rgba(243, 252, 120, 0.22);
+  
+}
+.element-Shadow{
+  box-shadow: 0 17px 14px  rgba(147, 20, 20, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  
+}
+.box-shadow{
+  box-shadow: 0 14px 14px  rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.02);
+  
+}
+.course-hover{
+
+   @apply  hover:lg:w-[340px]     hover:lg:h-[400px];
+}
+.tw-background{
+
+  background-color: #1a202c;
+  background-image: linear-gradient(to bottom, transparent, #1a202c), linear-gradient(to bottom, transparent, #1a202c);
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  
+
+
+}
+body{
+
+  font-family: 'Roboto', sans-serif;
+
+  } 
+   
+   
+   
+   
+   
+   
+   
+   
+  /* loginCss*/
+  /* .container {
+    width: 100%;
+    max-width: 1200px; /* You can adjust the max-width based on your design */
+   /* margin: 0 auto;  Center the container 
+  } */
+   .login_container {
+    @apply w-full min-h-screen bg-white flex items-center justify-center;
+    }
+  
+    .login_form_container {
+    @apply w-[900px] h-[500px] flex shadow-[0_14px_14px_rgba(0,0,0,0.25),0_10px_10px_rgba(0,0,0,0.22)] rounded-[10px];
+    }
+    .left {
+    @apply flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px];
+    }
+    .form_container {
+    @apply flex flex-col items-center;
+    }
+    .form_container h1 {
+    @apply text-[40px] mt-0;
+    }
+    .input {
+    @apply [outline:none] w-[370px] bg-[#edf5f3] text-sm mx-0 my-[5px] p-[15px] rounded-[10px] border-[none] focus:border-black focus:border-[1px];
+    }
+    .error_msg {
+    @apply w-[370px] text-sm bg-[#f34646] text-[white] text-center mx-0 my-[5px] p-[15px] rounded-[5px];
+    }
+    .right {
+    @apply flex-1 flex flex-col items-center justify-center bg-black rounded-tr-[10px] rounded-br-[10px];
+    }
+    .right h1 {
+    @apply text-[white]  font-bold text-[40px] self-center mt-0;
+    }
+    .white_btn,
+    .green_btn {
+    @apply [outline:none] bg-[white] font-bold w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 rounded-[20px] border-[none];
+    }
+    .green_btn {
+    @apply bg-black  font-bold text-[white] m-2.5;
+    }
+    
