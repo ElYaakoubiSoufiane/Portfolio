@@ -1,17 +1,23 @@
 import React, { useEffect } from "react";
 import img from "../assets/IMG_20230729_191035.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+
 import { Item } from "./Variants";
+
 export default function Home() {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <div id="home" className=" min-h-screen element-center py-300px bg-black ">
+      <div
+        id="home"
+        className=" min-h-screen element-center py-300px bg-black "
+      >
         <div className="max-w-screen-lg mx-auto  element-center flex-col gap-[30px] min-w-full h-full px-3 md:flex-row ">
           <motion.div
             variants={Item("down", 0.3)}
@@ -62,7 +68,7 @@ export default function Home() {
             >
               As a Junior MERN Stack Developer, I am passionate about crafting
               dynamic and efficient web applications. With a solid foundation in
-              front-end and back-end technologies,
+              front-end and back-end technologies,...
             </motion.p>
             <Link
               to="skills"
@@ -73,10 +79,10 @@ export default function Home() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
+                onClick={() => navigate("about")}
                 className="text-white  font-bold  px-6 border-[1px] border-white py-3 my-2 flex element-shadow w-auto rounded-[17px] bg-black   "
               >
-                 Know More About Me
-            
+                Know More About Me
                 <span className="hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="  ml-1" />
                 </span>

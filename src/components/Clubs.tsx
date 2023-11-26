@@ -48,7 +48,7 @@ export default function Clubs() {
   return (
     <div className="min-h-screen " id="clubs">
       <h1 className="text-center pt-[100px] text-white text-3xl font-extrabold">
-        I'M MEMBER IN{" "}
+        I'M A MEMBER IN{" "}
       </h1>
       <motion.div
         className="bg-black grid element-center mx-auto gap-10 flex-col md:flex-row p-4 my-auto"
