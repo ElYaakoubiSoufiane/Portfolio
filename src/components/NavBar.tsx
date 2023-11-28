@@ -104,7 +104,7 @@ export default function NavBar() {
               <motion.li
                 variants={item}
                 key={id}
-                className="px-4 cursor-pointer capitalize border-[0.01px] rounded-[20px] w-[230px] text-center my-3 element-shadow    py-4 text-4xl"
+                className="px-4 cursor-pointer capitalize border-[0.01px] rounded-[20px] w-[180px] md:w-[230px] text-center my-3 element-shadow    py-4 text-2xl"
               >
                 <ScrollLink onClick={() => setNav(!nav)} to={link}>
                   {" "}

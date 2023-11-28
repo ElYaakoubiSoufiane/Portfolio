@@ -21,7 +21,7 @@ const container = {
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,
-      duration: 0.5,
+      duration: 1,
     },
   },
 };
@@ -30,7 +30,7 @@ const item = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { bounce: 1, duration: 0.5 },
+    transition: { bounce: 1, duration: 1 },
   },
 };
 

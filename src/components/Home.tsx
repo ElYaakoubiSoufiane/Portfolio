@@ -42,12 +42,12 @@ export default function Home() {
             >
               <h2 className="text-white text-[26px]  text-left sm:text-5xl  font-bold ">
                 {" "}
-                I AM
+                I AM A
               </h2>
               <TypeAnimation
                 className=" text-[21px] w-full  md:text-left sm:text-3xl pb-4  text-[#e63946]  font-extrabold"
                 sequence={[
-                  "Junior MERN Stack Developer",
+                  " MERN Stack Developer",
                   1000,
                   "Network Associate",
                   1000,
@@ -66,7 +66,7 @@ export default function Home() {
               viewport={{ once: false, amount: 0.7 }}
               className=" text-gray-400 text-center md:w-[600px] md:text-left md:pb-[60px]"
             >
-              As a Junior MERN Stack Developer, I am passionate about crafting
+              As a MERN Stack Developer, I am passionate about crafting
               dynamic and efficient web applications. With a solid foundation in
               front-end and back-end technologies,...
             </motion.p>
