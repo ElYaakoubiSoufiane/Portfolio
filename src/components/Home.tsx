@@ -40,18 +40,27 @@ export default function Home() {
               viewport={{ once: false, amount: 0.2 }}
               className="flex-row  "
             >
-              <h2 className="text-white text-[26px]  text-left sm:text-5xl  font-bold ">
-                {" "}
-                I AM A
-              </h2>
+              <div className="flex flex-row space-x-3">
+                <h2 className="text-white text-[26px]  text-left sm:text-5xl  font-bold ">
+                  {" "}
+                  I AM
+                </h2>
+                <TypeAnimation
+                  className=" text-white text-[26px] px-4 text-left sm:text-5xl  font-bold  text-[#ffffff]  "
+                  sequence={[" A ", 1500, " A ", 1500, " An ", 1500]}
+                  speed={50}
+                  repeat={Infinity}
+                />
+              </div>
+
               <TypeAnimation
-                className=" text-[21px] w-full  md:text-left sm:text-3xl pb-4  text-[#e63946]  font-extrabold"
+                className=" text-[18px] w-full  md:text-left sm:text-3xl pb-4  text-[#e63946]  font-extrabold"
                 sequence={[
-                  " MERN Stack Developer",
+                  "MERN Stack Developer",
                   1000,
                   "Network Associate",
                   1000,
-                  "Embedded System Engineer",
+                  "Embedded System Engineering student",
                   1000,
                 ]}
                 speed={50}
@@ -66,8 +75,8 @@ export default function Home() {
               viewport={{ once: false, amount: 0.7 }}
               className=" text-gray-400 text-center md:w-[600px] md:text-left md:pb-[60px]"
             >
-              As a MERN Stack Developer, I am passionate about crafting
-              dynamic and efficient web applications. With a solid foundation in
+              As a MERN Stack Developer, I am passionate about crafting dynamic
+              and efficient web applications. With a solid foundation in
               front-end and back-end technologies,...
             </motion.p>
             <Link
@@ -75,7 +84,6 @@ export default function Home() {
               className="pt-6 element-center md:justify-start md:items-left "
             >
               <ScrollLink
-                
                 to="about"
                 className="text-white  font-bold  px-6 border-[1px] border-white py-3 my-2 flex element-shadow w-auto rounded-[17px] bg-black   "
               >
