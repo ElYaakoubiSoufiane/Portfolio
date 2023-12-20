@@ -48,7 +48,7 @@ export default function Home() {
               </div>
 
               <TypeAnimation
-                className=" text-[27px] w-full  md:text-left sm:text-3xl pb-4  text-[#e63946]  font-extrabold"
+                className=" text-[24px] w-full  md:text-left sm:text-3xl pb-4  text-[#e63946]  font-extrabold"
                 sequence={[
                   "MERN Stack Developer",
                   1000,
